@@ -5,11 +5,24 @@ const About = () => {
     //Traer el user del estado del UserContext
     const { user } = useContext(UserContext);
     return ( 
-        <div>
-            <h1>About</h1>
-            {
-                user && <div> <h1>{user.data.first_name}</h1> <h1>{user.data.last_name}</h1> </div>
-            }
+        <div className="container text-center mt-5">
+            <h1>About Screen</h1>
+            {!user ? (
+                <h2 className="text-danger">Please Login</h2>
+            ) : (
+                <div>
+                <h3>
+                    Name: {user.data.first_name} {user.data.last_name}
+                </h3>
+                <h3>Email: {user.data.email}</h3>
+                <img
+                    src={user.data.avatar}
+                    alt={user.data.id}
+                    width="150px"
+                    height="150px"
+                />
+                </div>
+            )}
         </div>
     )
 }
