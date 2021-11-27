@@ -20,19 +20,19 @@ const Header = () => {
                 </button>
 
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li className="navbar-item">
-                    {/* El link funciona como un a href en html */}
-                    <Link to="/" className="nav-link active">
-                        Home
-                    </Link>
-                    </li>
-                    <li className="navbar-item">
-                    <Link to="/about" className="nav-link">
-                        About
-                    </Link>
-                    </li>
-                </ul>
+                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li className="navbar-item">
+                        {/* El link funciona como un a href en html */}
+                        <Link to="/" className="nav-link active">
+                            Home
+                        </Link>
+                        </li>
+                        <li className="navbar-item">
+                        <Link to="/about" className="nav-link">
+                            About
+                        </Link>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>   
